@@ -9,14 +9,14 @@ import Foundation
 
 class RandomFactController {
     
-    static func fetchRandomFact(completion: @escaping ([RandomFact]?)-> Void) {
+    static func fetchRandomFact(completion: @escaping (RandomFact?)-> Void) {
         
-        //https://uselessfacts.jsph.pl/random.json?language=en
-        //Construct URL
         guard let baseURL = URL(string: Constants.RandomURL.baseURL) else { completion(nil) ; return }
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         urlComponents?.path.append(Constants.RandomURL.apiPath)
-        urlComponents?.path.append(Constants.RandomURL.englishPath)
+        let apiQuery = URLQueryItem(name: Constants.RandomURL.queryKeyKey, value: Constants.RandomURL.queryValue)
+        urlComponents?.queryItems = [apiQuery]
+        
         guard let finalURL = urlComponents?.url else { completion(nil) ; return }
         print("Final Random Joke URL: \(finalURL)")
         
@@ -34,10 +34,9 @@ class RandomFactController {
             guard let data = data else { completion(nil) ; return }
             
             do {
-                if let topLevel = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String : Any],
-                   let randomFactDict = topLevel["results"] as? [[String : Any]] {
+                if let topLevel = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String : Any] {
                    
-                    let randomFact = randomFactDict.compactMap { RandomFact(randomFactDictionary: $0) }
+                    let randomFact = RandomFact.init(randomFactDictionary: topLevel)
                     completion(randomFact)
                 }
             } catch {
@@ -46,5 +45,4 @@ class RandomFactController {
             }
         }.resume()
     }
-    
 }

@@ -1,24 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MSo-qY-TAA">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Random Fact View Controller-->
+        <scene sceneID="Hoy-vC-0r6">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="MSo-qY-TAA" customClass="RandomFactViewController" customModule="BYOA4_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdC-Ee-Cz0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Random Fact)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cV-c0-A5n">
+                                <rect key="frame" x="8" y="159" width="377" height="20.333333333333343"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-iN-TX7">
+                                <rect key="frame" x="8" y="683" width="377" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Press For Random Fact"/>
+                                <connections>
+                                    <action selector="randomFactButtonTapped:" destination="MSo-qY-TAA" eventType="touchUpInside" id="5hn-iF-keK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y2t-1m-c81"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y2t-1m-c81" firstAttribute="trailing" secondItem="7cV-c0-A5n" secondAttribute="trailing" constant="8" id="7MP-gm-1QP"/>
+                            <constraint firstItem="7cV-c0-A5n" firstAttribute="top" secondItem="y2t-1m-c81" secondAttribute="top" constant="100" id="8ie-UZ-2mk"/>
+                            <constraint firstItem="g7M-iN-TX7" firstAttribute="centerX" secondItem="y2t-1m-c81" secondAttribute="centerX" id="Dht-OJ-vl4"/>
+                            <constraint firstItem="7cV-c0-A5n" firstAttribute="centerX" secondItem="y2t-1m-c81" secondAttribute="centerX" id="IO4-gH-frp"/>
+                            <constraint firstItem="7cV-c0-A5n" firstAttribute="leading" secondItem="y2t-1m-c81" secondAttribute="leading" constant="8" id="Owh-MS-ey9"/>
+                            <constraint firstItem="y2t-1m-c81" firstAttribute="trailing" secondItem="g7M-iN-TX7" secondAttribute="trailing" constant="8" id="eev-em-Ttb"/>
+                            <constraint firstItem="y2t-1m-c81" firstAttribute="bottom" secondItem="g7M-iN-TX7" secondAttribute="bottom" constant="100" id="kDM-5z-38V"/>
+                            <constraint firstItem="g7M-iN-TX7" firstAttribute="leading" secondItem="y2t-1m-c81" secondAttribute="leading" constant="8" id="sez-Cn-qj7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="randomFactButton" destination="g7M-iN-TX7" id="lTL-yX-tr0"/>
+                        <outlet property="randomFactLabel" destination="7cV-c0-A5n" id="rPI-Ua-AEI"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDe-MR-J3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-100" y="-32"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

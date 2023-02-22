@@ -15,6 +15,7 @@
 		233FBC5529A6B182008CB891 /* RandomFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5429A6B182008CB891 /* RandomFact.swift */; };
 		233FBC5729A6B1A0008CB891 /* RandomFactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5629A6B1A0008CB891 /* RandomFactController.swift */; };
 		233FBC5929A6B5CA008CB891 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5829A6B5CA008CB891 /* Constants.swift */; };
+		233FBC5D29A6BDA5008CB891 /* RandomFactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5C29A6BDA5008CB891 /* RandomFactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		233FBC5429A6B182008CB891 /* RandomFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFact.swift; sourceTree = "<group>"; };
 		233FBC5629A6B1A0008CB891 /* RandomFactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactController.swift; sourceTree = "<group>"; };
 		233FBC5829A6B5CA008CB891 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		233FBC5C29A6BDA5008CB891 /* RandomFactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		233FBC3B29A6B0E3008CB891 /* BYOA4.3 */ = {
 			isa = PBXGroup;
 			children = (
+				233FBC5B29A6BD92008CB891 /* VC */,
 				233FBC5A29A6BB29008CB891 /* StoryBoard */,
 				233FBC5229A6B132008CB891 /* ModelController */,
 				233FBC5129A6B12B008CB891 /* Model */,
@@ -103,6 +106,14 @@
 				233FBC4729A6B0E4008CB891 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		233FBC5B29A6BD92008CB891 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				233FBC5C29A6BDA5008CB891 /* RandomFactViewController.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				233FBC3D29A6B0E3008CB891 /* AppDelegate.swift in Sources */,
 				233FBC3F29A6B0E3008CB891 /* SceneDelegate.swift in Sources */,
 				233FBC5929A6B5CA008CB891 /* Constants.swift in Sources */,
+				233FBC5D29A6BDA5008CB891 /* RandomFactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
