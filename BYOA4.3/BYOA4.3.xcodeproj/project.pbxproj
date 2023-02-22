@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		233FBC3D29A6B0E3008CB891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC3C29A6B0E3008CB891 /* AppDelegate.swift */; };
 		233FBC3F29A6B0E3008CB891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC3E29A6B0E3008CB891 /* SceneDelegate.swift */; };
-		233FBC4129A6B0E3008CB891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC4029A6B0E3008CB891 /* ViewController.swift */; };
 		233FBC4429A6B0E3008CB891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233FBC4229A6B0E3008CB891 /* Main.storyboard */; };
 		233FBC4629A6B0E4008CB891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233FBC4529A6B0E4008CB891 /* Assets.xcassets */; };
 		233FBC4929A6B0E4008CB891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233FBC4729A6B0E4008CB891 /* LaunchScreen.storyboard */; };
-		233FBC5529A6B182008CB891 /* Model1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5429A6B182008CB891 /* Model1.swift */; };
-		233FBC5729A6B1A0008CB891 /* ModelController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5629A6B1A0008CB891 /* ModelController1.swift */; };
+		233FBC5529A6B182008CB891 /* RandomFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5429A6B182008CB891 /* RandomFact.swift */; };
+		233FBC5729A6B1A0008CB891 /* RandomFactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5629A6B1A0008CB891 /* RandomFactController.swift */; };
+		233FBC5929A6B5CA008CB891 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233FBC5829A6B5CA008CB891 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		233FBC3929A6B0E3008CB891 /* BYOA4.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYOA4.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233FBC3C29A6B0E3008CB891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233FBC3E29A6B0E3008CB891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		233FBC4029A6B0E3008CB891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		233FBC4329A6B0E3008CB891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		233FBC4529A6B0E4008CB891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233FBC4829A6B0E4008CB891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		233FBC4A29A6B0E4008CB891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		233FBC5429A6B182008CB891 /* Model1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model1.swift; sourceTree = "<group>"; };
-		233FBC5629A6B1A0008CB891 /* ModelController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController1.swift; sourceTree = "<group>"; };
+		233FBC5429A6B182008CB891 /* RandomFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFact.swift; sourceTree = "<group>"; };
+		233FBC5629A6B1A0008CB891 /* RandomFactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactController.swift; sourceTree = "<group>"; };
+		233FBC5829A6B5CA008CB891 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,10 @@
 		233FBC3B29A6B0E3008CB891 /* BYOA4.3 */ = {
 			isa = PBXGroup;
 			children = (
+				233FBC5A29A6BB29008CB891 /* StoryBoard */,
 				233FBC5229A6B132008CB891 /* ModelController */,
 				233FBC5129A6B12B008CB891 /* Model */,
 				233FBC5029A6B0F0008CB891 /* SupportingFiles */,
-				233FBC4029A6B0E3008CB891 /* ViewController.swift */,
-				233FBC4229A6B0E3008CB891 /* Main.storyboard */,
-				233FBC4729A6B0E4008CB891 /* LaunchScreen.storyboard */,
 			);
 			path = BYOA4.3;
 			sourceTree = "<group>";
@@ -77,6 +75,7 @@
 				233FBC3E29A6B0E3008CB891 /* SceneDelegate.swift */,
 				233FBC4529A6B0E4008CB891 /* Assets.xcassets */,
 				233FBC4A29A6B0E4008CB891 /* Info.plist */,
+				233FBC5829A6B5CA008CB891 /* Constants.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -84,7 +83,7 @@
 		233FBC5129A6B12B008CB891 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				233FBC5429A6B182008CB891 /* Model1.swift */,
+				233FBC5429A6B182008CB891 /* RandomFact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,9 +91,18 @@
 		233FBC5229A6B132008CB891 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				233FBC5629A6B1A0008CB891 /* ModelController1.swift */,
+				233FBC5629A6B1A0008CB891 /* RandomFactController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		233FBC5A29A6BB29008CB891 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				233FBC4229A6B0E3008CB891 /* Main.storyboard */,
+				233FBC4729A6B0E4008CB891 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233FBC4129A6B0E3008CB891 /* ViewController.swift in Sources */,
-				233FBC5529A6B182008CB891 /* Model1.swift in Sources */,
-				233FBC5729A6B1A0008CB891 /* ModelController1.swift in Sources */,
+				233FBC5529A6B182008CB891 /* RandomFact.swift in Sources */,
+				233FBC5729A6B1A0008CB891 /* RandomFactController.swift in Sources */,
 				233FBC3D29A6B0E3008CB891 /* AppDelegate.swift in Sources */,
 				233FBC3F29A6B0E3008CB891 /* SceneDelegate.swift in Sources */,
+				233FBC5929A6B5CA008CB891 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
